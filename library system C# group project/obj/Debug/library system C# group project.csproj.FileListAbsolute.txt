@@ -1,0 +1,11 @@
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\bin\Debug\library system C# group project.exe.config
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\bin\Debug\library system C# group project.exe
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\bin\Debug\library system C# group project.pdb
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library system C# group project.csproj.AssemblyReference.cache
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library system C# group project.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library_system_C__group_project.Properties.Resources.resources
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library system C# group project.csproj.GenerateResource.cache
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library system C# group project.csproj.CoreCompileInputs.cache
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library system C# group project.exe
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library system C# group project.pdb
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library_system_C__group_project.Form1.resources

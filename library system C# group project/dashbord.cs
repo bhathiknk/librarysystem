@@ -30,5 +30,16 @@ namespace library_system_C__group_project
             AddBook abs = new AddBook();
             abs.Show();
         }
+
+        private void booksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewbook vb = new viewbook();
+            vb.Show();
+        }
     }
 }

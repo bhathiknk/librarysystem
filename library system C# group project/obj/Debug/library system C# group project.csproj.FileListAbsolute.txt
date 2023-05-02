@@ -9,3 +9,5 @@ C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library sy
 C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library system C# group project.exe
 C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library system C# group project.pdb
 C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library_system_C__group_project.Form1.resources
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library_system_C__group_project.dashbord.resources
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library_system_C__group_project.AddBook.resources

@@ -16,5 +16,19 @@ namespace library_system_C__group_project
         {
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are You Sure You Want To Exit?","Confirm",MessageBoxButtons.YesNo,MessageBoxIcon.Warning)==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void addNewBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddBook abs = new AddBook();
+            abs.Show();
+        }
     }
 }

@@ -42,7 +42,9 @@
             this.username.Size = new System.Drawing.Size(238, 22);
             this.username.TabIndex = 0;
             this.username.Text = "username";
+            this.username.MouseClick += new System.Windows.Forms.MouseEventHandler(this.username_MouseClick);
             this.username.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.username.MouseEnter += new System.EventHandler(this.username_MouseEnter);
             // 
             // password
             // 
@@ -51,6 +53,9 @@
             this.password.Size = new System.Drawing.Size(238, 22);
             this.password.TabIndex = 2;
             this.password.Text = "password";
+            this.password.MouseClick += new System.Windows.Forms.MouseEventHandler(this.password_MouseClick);
+            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
+            this.password.MouseEnter += new System.EventHandler(this.password_MouseEnter);
             // 
             // loginbutton
             // 

@@ -192,6 +192,7 @@
             this.Name = "AddBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddBook";
+            this.Load += new System.EventHandler(this.AddBook_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

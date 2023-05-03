@@ -104,5 +104,10 @@ namespace library_system_C__group_project
                 this.Close();
             }
         }
+
+        private void AddBook_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -56,7 +56,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(530, 95);
+            this.label1.Location = new System.Drawing.Point(217, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 25);
             this.label1.TabIndex = 0;
@@ -65,7 +65,7 @@
             // 
             // txtBookSearch
             // 
-            this.txtBookSearch.Location = new System.Drawing.Point(650, 99);
+            this.txtBookSearch.Location = new System.Drawing.Point(407, 105);
             this.txtBookSearch.Name = "txtBookSearch";
             this.txtBookSearch.Size = new System.Drawing.Size(268, 22);
             this.txtBookSearch.TabIndex = 1;
@@ -74,7 +74,7 @@
             // btnRefresh
             // 
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.Location = new System.Drawing.Point(924, 91);
+            this.btnRefresh.Location = new System.Drawing.Point(708, 91);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(93, 35);
             this.btnRefresh.TabIndex = 2;
@@ -89,7 +89,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1561, 451);
+            this.dataGridView1.Size = new System.Drawing.Size(1194, 394);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -114,7 +114,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(31, 702);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1561, 475);
+            this.panel1.Size = new System.Drawing.Size(1194, 475);
             this.panel1.TabIndex = 4;
             // 
             // txtDatePicker
@@ -255,7 +255,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1626, 775);
+            this.ClientSize = new System.Drawing.Size(1263, 627);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnRefresh);

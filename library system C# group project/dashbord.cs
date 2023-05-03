@@ -41,5 +41,17 @@ namespace library_system_C__group_project
             viewbook vb = new viewbook();
             vb.Show();
         }
+
+        private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddStudent ast =new AddStudent();
+            ast.Show();
+        }
+
+        private void viewStudentInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewStudentInformation vsi =new ViewStudentInformation();
+            vsi.Show();
+        }
     }
 }

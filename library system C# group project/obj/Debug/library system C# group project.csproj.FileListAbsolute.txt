@@ -12,3 +12,4 @@ C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library sy
 C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library_system_C__group_project.dashbord.resources
 C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library_system_C__group_project.AddBook.resources
 C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library_system_C__group_project.viewbook.resources
+C:\Users\Bhathika Nilesh\source\repos\library system C# group project\library system C# group project\obj\Debug\library_system_C__group_project.AddStudent.resources

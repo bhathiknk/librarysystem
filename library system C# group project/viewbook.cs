@@ -49,6 +49,8 @@ namespace library_system_C__group_project
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
+
+                viewbook_Load(this, null);
             }
         }
 
@@ -72,6 +74,8 @@ namespace library_system_C__group_project
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
+
+                viewbook_Load(this, null);
             }
 
            
@@ -193,6 +197,14 @@ namespace library_system_C__group_project
                 da.Fill(ds);
 
                 dataGridView1.DataSource = ds.Tables[0];
+            }
+        }
+
+        private void btnCancel_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Unsaved Data Will be Lost", "Are you sure?", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                this.Close();
             }
         }
     }

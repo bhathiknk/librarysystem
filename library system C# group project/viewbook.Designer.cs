@@ -96,7 +96,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.txtDatePicker);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnCancel);
@@ -119,15 +119,16 @@
             // 
             // txtDatePicker
             // 
-            this.txtDatePicker.Location = new System.Drawing.Point(732, 118);
+            this.txtDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDatePicker.Location = new System.Drawing.Point(780, 120);
             this.txtDatePicker.Name = "txtDatePicker";
-            this.txtDatePicker.Size = new System.Drawing.Size(217, 22);
+            this.txtDatePicker.Size = new System.Drawing.Size(217, 27);
             this.txtDatePicker.TabIndex = 15;
             this.txtDatePicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(1058, 183);
+            this.btnDelete.Location = new System.Drawing.Point(827, 357);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(64, 34);
             this.btnDelete.TabIndex = 14;
@@ -137,16 +138,17 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(1058, 258);
+            this.btnCancel.Location = new System.Drawing.Point(922, 357);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(64, 34);
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(1058, 114);
+            this.btnUpdate.Location = new System.Drawing.Point(732, 357);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(64, 34);
             this.btnUpdate.TabIndex = 12;
@@ -156,56 +158,63 @@
             // 
             // txtBookQuantity
             // 
-            this.txtBookQuantity.Location = new System.Drawing.Point(732, 266);
+            this.txtBookQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBookQuantity.Location = new System.Drawing.Point(780, 268);
             this.txtBookQuantity.Name = "txtBookQuantity";
-            this.txtBookQuantity.Size = new System.Drawing.Size(217, 22);
+            this.txtBookQuantity.Size = new System.Drawing.Size(217, 27);
             this.txtBookQuantity.TabIndex = 11;
             // 
             // txtBookPrice
             // 
-            this.txtBookPrice.Location = new System.Drawing.Point(732, 195);
+            this.txtBookPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBookPrice.Location = new System.Drawing.Point(780, 197);
             this.txtBookPrice.Name = "txtBookPrice";
-            this.txtBookPrice.Size = new System.Drawing.Size(217, 22);
+            this.txtBookPrice.Size = new System.Drawing.Size(217, 27);
             this.txtBookPrice.TabIndex = 10;
             // 
             // txtBookPublication
             // 
-            this.txtBookPublication.Location = new System.Drawing.Point(191, 276);
+            this.txtBookPublication.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBookPublication.Location = new System.Drawing.Point(239, 278);
             this.txtBookPublication.Name = "txtBookPublication";
-            this.txtBookPublication.Size = new System.Drawing.Size(217, 22);
+            this.txtBookPublication.Size = new System.Drawing.Size(217, 27);
             this.txtBookPublication.TabIndex = 8;
             this.txtBookPublication.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // txtBookAuthor
             // 
-            this.txtBookAuthor.Location = new System.Drawing.Point(191, 205);
+            this.txtBookAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBookAuthor.Location = new System.Drawing.Point(239, 207);
             this.txtBookAuthor.Name = "txtBookAuthor";
-            this.txtBookAuthor.Size = new System.Drawing.Size(217, 22);
+            this.txtBookAuthor.Size = new System.Drawing.Size(217, 27);
             this.txtBookAuthor.TabIndex = 7;
             // 
             // txtBookName
             // 
-            this.txtBookName.Location = new System.Drawing.Point(191, 124);
+            this.txtBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBookName.Location = new System.Drawing.Point(239, 126);
             this.txtBookName.Name = "txtBookName";
-            this.txtBookName.Size = new System.Drawing.Size(217, 22);
+            this.txtBookName.Size = new System.Drawing.Size(217, 27);
             this.txtBookName.TabIndex = 6;
             this.txtBookName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(572, 272);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 16);
+            this.label7.Size = new System.Drawing.Size(123, 22);
             this.label7.TabIndex = 5;
             this.label7.Text = "Book Quantity";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(572, 201);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 16);
+            this.label6.Size = new System.Drawing.Size(95, 22);
             this.label6.TabIndex = 4;
             this.label6.Text = "Book price";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -213,9 +222,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(572, 120);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 16);
+            this.label5.Size = new System.Drawing.Size(165, 22);
             this.label5.TabIndex = 3;
             this.label5.Text = "Book Purches Date";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -223,9 +233,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(45, 276);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 16);
+            this.label4.Size = new System.Drawing.Size(144, 22);
             this.label4.TabIndex = 2;
             this.label4.Text = "Book Publication";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -233,9 +244,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(45, 205);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 16);
+            this.label3.Size = new System.Drawing.Size(109, 22);
             this.label3.TabIndex = 1;
             this.label3.Text = "Book Author";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -243,9 +255,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(45, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 16);
+            this.label2.Size = new System.Drawing.Size(103, 22);
             this.label2.TabIndex = 0;
             this.label2.Text = "Book Name";
             this.label2.Click += new System.EventHandler(this.label2_Click);

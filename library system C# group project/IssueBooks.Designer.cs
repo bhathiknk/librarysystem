@@ -84,6 +84,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.txtBookName);
+            this.panel2.Controls.Add(this.btnRefresh);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.btnIssueBook);
             this.panel2.Controls.Add(this.dateTimePicker1);
@@ -266,7 +267,6 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel3.BackColor = System.Drawing.Color.Silver;
             this.panel3.Controls.Add(this.btnExit);
-            this.panel3.Controls.Add(this.btnRefresh);
             this.panel3.Controls.Add(this.btnSearchStudent);
             this.panel3.Controls.Add(this.txtStudentId);
             this.panel3.Controls.Add(this.label2);
@@ -278,9 +278,9 @@
             // btnExit
             // 
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Location = new System.Drawing.Point(174, 358);
+            this.btnExit.Location = new System.Drawing.Point(90, 364);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(79, 45);
+            this.btnExit.Size = new System.Drawing.Size(79, 39);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -289,9 +289,9 @@
             // btnRefresh
             // 
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRefresh.Location = new System.Drawing.Point(24, 358);
+            this.btnRefresh.Location = new System.Drawing.Point(139, 364);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(79, 45);
+            this.btnRefresh.Size = new System.Drawing.Size(79, 39);
             this.btnRefresh.TabIndex = 0;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;

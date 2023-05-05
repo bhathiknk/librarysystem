@@ -127,7 +127,7 @@ namespace library_system_C__group_project
                     con.Close();
 
                     MessageBox.Show("Book Issued", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    IssueBooks_Load(this, null);
+                  
                 }
                 else
                 {

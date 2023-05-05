@@ -66,5 +66,11 @@ namespace library_system_C__group_project
             ReturnBook returnBook =new ReturnBook();
             returnBook.Show();
         }
+
+        private void completeBooksDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CompleteBookDetails cbd =new CompleteBookDetails();
+            cbd.Show();
+        }
     }
 }

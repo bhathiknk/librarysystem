@@ -64,23 +64,23 @@
             this.booksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewBooksToolStripMenuItem,
             this.viewBooksToolStripMenuItem});
-            this.booksToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.booksToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
-            this.booksToolStripMenuItem.Size = new System.Drawing.Size(79, 35);
+            this.booksToolStripMenuItem.Size = new System.Drawing.Size(88, 35);
             this.booksToolStripMenuItem.Text = "Books";
             this.booksToolStripMenuItem.Click += new System.EventHandler(this.booksToolStripMenuItem_Click);
             // 
             // addNewBooksToolStripMenuItem
             // 
             this.addNewBooksToolStripMenuItem.Name = "addNewBooksToolStripMenuItem";
-            this.addNewBooksToolStripMenuItem.Size = new System.Drawing.Size(237, 32);
+            this.addNewBooksToolStripMenuItem.Size = new System.Drawing.Size(263, 36);
             this.addNewBooksToolStripMenuItem.Text = "Add New Books";
             this.addNewBooksToolStripMenuItem.Click += new System.EventHandler(this.addNewBooksToolStripMenuItem_Click);
             // 
             // viewBooksToolStripMenuItem
             // 
             this.viewBooksToolStripMenuItem.Name = "viewBooksToolStripMenuItem";
-            this.viewBooksToolStripMenuItem.Size = new System.Drawing.Size(237, 32);
+            this.viewBooksToolStripMenuItem.Size = new System.Drawing.Size(263, 36);
             this.viewBooksToolStripMenuItem.Text = "View Books";
             this.viewBooksToolStripMenuItem.Click += new System.EventHandler(this.viewBooksToolStripMenuItem_Click);
             // 
@@ -117,15 +117,16 @@
             // returnBooksToolStripMenuItem
             // 
             this.returnBooksToolStripMenuItem.Name = "returnBooksToolStripMenuItem";
-            this.returnBooksToolStripMenuItem.Size = new System.Drawing.Size(161, 35);
-            this.returnBooksToolStripMenuItem.Text = "Return Books";
+            this.returnBooksToolStripMenuItem.Size = new System.Drawing.Size(155, 35);
+            this.returnBooksToolStripMenuItem.Text = "ReturnBooks";
             this.returnBooksToolStripMenuItem.Click += new System.EventHandler(this.returnBooksToolStripMenuItem_Click);
             // 
             // completeBooksDetailsToolStripMenuItem
             // 
             this.completeBooksDetailsToolStripMenuItem.Name = "completeBooksDetailsToolStripMenuItem";
-            this.completeBooksDetailsToolStripMenuItem.Size = new System.Drawing.Size(269, 35);
-            this.completeBooksDetailsToolStripMenuItem.Text = "Complete Books Details";
+            this.completeBooksDetailsToolStripMenuItem.Size = new System.Drawing.Size(257, 35);
+            this.completeBooksDetailsToolStripMenuItem.Text = "CompleteBooksDetails";
+            this.completeBooksDetailsToolStripMenuItem.Click += new System.EventHandler(this.completeBooksDetailsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 

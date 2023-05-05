@@ -53,5 +53,12 @@ namespace library_system_C__group_project
             ViewStudentInformation vsi =new ViewStudentInformation();
             vsi.Show();
         }
+
+        private void issueBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IssueBooks ib =new IssueBooks();
+            ib.Show();
+
+        }
     }
 }

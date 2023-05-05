@@ -70,6 +70,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IssueBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueBooks.Designer.cs">
+      <DependentUpon>IssueBooks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="viewbook.cs">
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueBooks.resx">
+      <DependentUpon>IssueBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

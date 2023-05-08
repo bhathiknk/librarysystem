@@ -64,7 +64,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(379, 505);
+            this.panel1.Size = new System.Drawing.Size(341, 505);
             this.panel1.TabIndex = 0;
             // 
             // btnExit
@@ -95,7 +95,7 @@
             this.btnSearchStudent.Name = "btnSearchStudent";
             this.btnSearchStudent.Size = new System.Drawing.Size(143, 34);
             this.btnSearchStudent.TabIndex = 2;
-            this.btnSearchStudent.Text = "Seaarch Student";
+            this.btnSearchStudent.Text = "Search Student";
             this.btnSearchStudent.UseVisualStyleBackColor = true;
             this.btnSearchStudent.Click += new System.EventHandler(this.btnSearchStudent_Click);
             // 
@@ -131,7 +131,7 @@
             this.panel2.Controls.Add(this.lable2);
             this.panel2.Location = new System.Drawing.Point(12, 555);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1224, 266);
+            this.panel2.Size = new System.Drawing.Size(1566, 266);
             this.panel2.TabIndex = 2;
             // 
             // txtBookIssueDate
@@ -213,12 +213,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowDrop = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(417, 22);
+            this.dataGridView1.Location = new System.Drawing.Point(376, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(818, 503);
+            this.dataGridView1.Size = new System.Drawing.Size(1471, 513);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -237,7 +238,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1284, 580);
+            this.ClientSize = new System.Drawing.Size(1241, 580);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

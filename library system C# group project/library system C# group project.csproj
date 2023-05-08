@@ -85,12 +85,6 @@
     <Compile Include="dashbord.Designer.cs">
       <DependentUpon>dashbord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="IssueBooks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +103,24 @@
     </Compile>
     <Compile Include="ReturnBook.Designer.cs">
       <DependentUpon>ReturnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signuptest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signuptest.Designer.cs">
+      <DependentUpon>signuptest.cs</DependentUpon>
     </Compile>
     <Compile Include="viewbook.cs">
       <SubType>Form</SubType>
@@ -134,9 +146,6 @@
     <EmbeddedResource Include="dashbord.resx">
       <DependentUpon>dashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="IssueBooks.resx">
       <DependentUpon>IssueBooks.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +160,15 @@
     </Compile>
     <EmbeddedResource Include="ReturnBook.resx">
       <DependentUpon>ReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signuptest.resx">
+      <DependentUpon>signuptest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewbook.resx">
       <DependentUpon>viewbook.cs</DependentUpon>

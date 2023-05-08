@@ -56,7 +56,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(182, 63);
+            this.label1.Location = new System.Drawing.Point(219, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 25);
             this.label1.TabIndex = 2;
@@ -86,7 +86,7 @@
             // 
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUp.Location = new System.Drawing.Point(187, 339);
+            this.btnSignUp.Location = new System.Drawing.Point(224, 340);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(119, 41);
             this.btnSignUp.TabIndex = 5;
@@ -98,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 558);
+            this.ClientSize = new System.Drawing.Size(481, 558);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

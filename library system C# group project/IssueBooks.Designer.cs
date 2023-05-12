@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtBookName = new System.Windows.Forms.ComboBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnIssueBook = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -47,7 +48,6 @@
             this.lable4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.btnSearchStudent = new System.Windows.Forms.Button();
             this.txtStudentId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(681, 100);
+            this.panel1.Size = new System.Drawing.Size(776, 100);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -100,7 +100,7 @@
             this.panel2.Controls.Add(this.lable4);
             this.panel2.Location = new System.Drawing.Point(298, 118);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(395, 466);
+            this.panel2.Size = new System.Drawing.Size(490, 466);
             this.panel2.TabIndex = 1;
             // 
             // txtBookName
@@ -108,13 +108,25 @@
             this.txtBookName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBookName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtBookName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtBookName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.txtBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBookName.FormattingEnabled = true;
             this.txtBookName.Location = new System.Drawing.Point(178, 258);
             this.txtBookName.Name = "txtBookName";
-            this.txtBookName.Size = new System.Drawing.Size(195, 28);
+            this.txtBookName.Size = new System.Drawing.Size(290, 28);
             this.txtBookName.TabIndex = 14;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRefresh.Location = new System.Drawing.Point(178, 364);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(79, 39);
+            this.btnRefresh.TabIndex = 0;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // label3
             // 
@@ -122,7 +134,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(52, 431);
+            this.label3.Location = new System.Drawing.Point(147, 431);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(321, 18);
             this.label3.TabIndex = 13;
@@ -133,7 +145,7 @@
             this.btnIssueBook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnIssueBook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIssueBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIssueBook.Location = new System.Drawing.Point(240, 364);
+            this.btnIssueBook.Location = new System.Drawing.Point(335, 364);
             this.btnIssueBook.Name = "btnIssueBook";
             this.btnIssueBook.Size = new System.Drawing.Size(133, 39);
             this.btnIssueBook.TabIndex = 12;
@@ -149,7 +161,7 @@
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(178, 309);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(195, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(290, 27);
             this.dateTimePicker1.TabIndex = 11;
             // 
             // txtStudentEmail
@@ -161,7 +173,7 @@
             this.txtStudentEmail.Location = new System.Drawing.Point(178, 199);
             this.txtStudentEmail.Name = "txtStudentEmail";
             this.txtStudentEmail.ReadOnly = true;
-            this.txtStudentEmail.Size = new System.Drawing.Size(195, 27);
+            this.txtStudentEmail.Size = new System.Drawing.Size(290, 27);
             this.txtStudentEmail.TabIndex = 9;
             // 
             // txtStudentContact
@@ -173,7 +185,7 @@
             this.txtStudentContact.Location = new System.Drawing.Point(178, 142);
             this.txtStudentContact.Name = "txtStudentContact";
             this.txtStudentContact.ReadOnly = true;
-            this.txtStudentContact.Size = new System.Drawing.Size(195, 27);
+            this.txtStudentContact.Size = new System.Drawing.Size(290, 27);
             this.txtStudentContact.TabIndex = 8;
             // 
             // txtDepartment
@@ -185,7 +197,7 @@
             this.txtDepartment.Location = new System.Drawing.Point(178, 88);
             this.txtDepartment.Name = "txtDepartment";
             this.txtDepartment.ReadOnly = true;
-            this.txtDepartment.Size = new System.Drawing.Size(195, 27);
+            this.txtDepartment.Size = new System.Drawing.Size(290, 27);
             this.txtDepartment.TabIndex = 7;
             // 
             // txtStudentName
@@ -197,7 +209,7 @@
             this.txtStudentName.Location = new System.Drawing.Point(178, 33);
             this.txtStudentName.Name = "txtStudentName";
             this.txtStudentName.ReadOnly = true;
-            this.txtStudentName.Size = new System.Drawing.Size(195, 27);
+            this.txtStudentName.Size = new System.Drawing.Size(290, 27);
             this.txtStudentName.TabIndex = 6;
             // 
             // label9
@@ -286,17 +298,6 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnRefresh
-            // 
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRefresh.Location = new System.Drawing.Point(139, 364);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(79, 39);
-            this.btnRefresh.TabIndex = 0;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
             // btnSearchStudent
             // 
             this.btnSearchStudent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -333,7 +334,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(705, 596);
+            this.ClientSize = new System.Drawing.Size(800, 596);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

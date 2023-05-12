@@ -116,12 +116,6 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="signuptest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="signuptest.Designer.cs">
-      <DependentUpon>signuptest.cs</DependentUpon>
-    </Compile>
     <Compile Include="viewbook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,9 +160,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="signuptest.resx">
-      <DependentUpon>signuptest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewbook.resx">
       <DependentUpon>viewbook.cs</DependentUpon>

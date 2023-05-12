@@ -5,6 +5,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -70,6 +73,10 @@ namespace library_system_C__group_project
             }
             txtBookName.Text = bname;
             txtBookIssueDate.Text = bdate;
+
+            string i;
+            i = dataGridView1.SelectedCells[5].Value.ToString();
+            txtEmail.Text = i.ToString();
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
@@ -93,6 +100,7 @@ namespace library_system_C__group_project
             {
                 panel2.Visible = false;
                 dataGridView1.DataSource = null;
+                txtEmail.Clear();
             }
         }
 
@@ -109,6 +117,20 @@ namespace library_system_C__group_project
         private void btnCancel_Click(object sender, EventArgs e)
         {
             panel2.Visible=false;
+        }
+
+        private void btnSendEmail_Click(object sender, EventArgs e)
+        {
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+            smtp.EnableSsl = true;
+            smtp.UseDefaultCredentials = false;
+            smtp.Credentials = new NetworkCredential("bhathikanileshkavindya@gmail.com", "vrwyfpnvmkgsqmke");
+            MailMessage mail =new MailMessage("xxxx@gmail.com",txtEmail.Text,"this is for book return notice",txtContent.Text);
+            mail.Priority=MailPriority.High;
+            smtp.Send(mail);
+
+            MessageBox.Show("Mail Send.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ReturnBook_Load(this, null);
         }
     }
 }

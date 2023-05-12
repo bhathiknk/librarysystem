@@ -47,11 +47,18 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lMSDataSet = new library_system_C__group_project.LMSDataSet();
             this.lMSDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtContent = new System.Windows.Forms.TextBox();
+            this.lable1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnSendEmail = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lMSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lMSDataSetBindingSource)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -219,7 +226,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1471, 513);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(924, 325);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -233,12 +241,68 @@
             this.lMSDataSetBindingSource.DataSource = this.lMSDataSet;
             this.lMSDataSetBindingSource.Position = 0;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnSendEmail);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.lable1);
+            this.panel3.Controls.Add(this.txtContent);
+            this.panel3.Controls.Add(this.txtEmail);
+            this.panel3.Location = new System.Drawing.Point(376, 354);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(835, 163);
+            this.panel3.TabIndex = 4;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(162, 21);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(335, 22);
+            this.txtEmail.TabIndex = 0;
+            // 
+            // txtContent
+            // 
+            this.txtContent.Location = new System.Drawing.Point(162, 78);
+            this.txtContent.Multiline = true;
+            this.txtContent.Name = "txtContent";
+            this.txtContent.Size = new System.Drawing.Size(335, 85);
+            this.txtContent.TabIndex = 1;
+            // 
+            // lable1
+            // 
+            this.lable1.AutoSize = true;
+            this.lable1.Location = new System.Drawing.Point(47, 24);
+            this.lable1.Name = "lable1";
+            this.lable1.Size = new System.Drawing.Size(51, 20);
+            this.lable1.TabIndex = 2;
+            this.lable1.Text = "Email";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(47, 100);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 20);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Content";
+            // 
+            // btnSendEmail
+            // 
+            this.btnSendEmail.Location = new System.Drawing.Point(741, 126);
+            this.btnSendEmail.Name = "btnSendEmail";
+            this.btnSendEmail.Size = new System.Drawing.Size(91, 34);
+            this.btnSendEmail.TabIndex = 4;
+            this.btnSendEmail.Text = "Send Email";
+            this.btnSendEmail.UseVisualStyleBackColor = true;
+            this.btnSendEmail.Click += new System.EventHandler(this.btnSendEmail_Click);
+            // 
             // ReturnBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1241, 580);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -253,6 +317,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lMSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lMSDataSetBindingSource)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -277,5 +343,11 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource lMSDataSetBindingSource;
         private LMSDataSet lMSDataSet;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox txtContent;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lable1;
+        private System.Windows.Forms.Button btnSendEmail;
     }
 }

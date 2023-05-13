@@ -36,11 +36,13 @@
             this.txtStudentId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnVerifyReturn = new System.Windows.Forms.Button();
+            this.txtVerify = new System.Windows.Forms.TextBox();
+            this.btnOTP = new System.Windows.Forms.Button();
             this.txtStudentEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBookIssueDate = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnReturn = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.txtBookName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -130,11 +132,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.btnVerifyReturn);
+            this.panel2.Controls.Add(this.txtVerify);
+            this.panel2.Controls.Add(this.btnOTP);
             this.panel2.Controls.Add(this.txtStudentEmail);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtBookIssueDate);
             this.panel2.Controls.Add(this.btnCancel);
-            this.panel2.Controls.Add(this.btnReturn);
             this.panel2.Controls.Add(this.dateTimePicker2);
             this.panel2.Controls.Add(this.txtBookName);
             this.panel2.Controls.Add(this.label4);
@@ -142,13 +146,46 @@
             this.panel2.Controls.Add(this.lable2);
             this.panel2.Location = new System.Drawing.Point(12, 535);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1199, 507);
+            this.panel2.Size = new System.Drawing.Size(1199, 503);
             this.panel2.TabIndex = 2;
+            // 
+            // btnVerifyReturn
+            // 
+            this.btnVerifyReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerifyReturn.Location = new System.Drawing.Point(935, 183);
+            this.btnVerifyReturn.Name = "btnVerifyReturn";
+            this.btnVerifyReturn.Size = new System.Drawing.Size(97, 47);
+            this.btnVerifyReturn.TabIndex = 13;
+            this.btnVerifyReturn.Text = "Veryfy";
+            this.btnVerifyReturn.UseVisualStyleBackColor = true;
+            this.btnVerifyReturn.Click += new System.EventHandler(this.btnVerifyReturn_Click);
+            // 
+            // txtVerify
+            // 
+            this.txtVerify.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVerify.ForeColor = System.Drawing.Color.Silver;
+            this.txtVerify.Location = new System.Drawing.Point(828, 130);
+            this.txtVerify.Name = "txtVerify";
+            this.txtVerify.Size = new System.Drawing.Size(310, 27);
+            this.txtVerify.TabIndex = 12;
+            this.txtVerify.Text = "Enter the OTP";
+            this.txtVerify.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtVerify_MouseClick);
+            // 
+            // btnOTP
+            // 
+            this.btnOTP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnOTP.Location = new System.Drawing.Point(935, 48);
+            this.btnOTP.Name = "btnOTP";
+            this.btnOTP.Size = new System.Drawing.Size(97, 41);
+            this.btnOTP.TabIndex = 11;
+            this.btnOTP.Text = "Send OTP";
+            this.btnOTP.UseVisualStyleBackColor = true;
+            this.btnOTP.Click += new System.EventHandler(this.btnOTP_Click);
             // 
             // txtStudentEmail
             // 
             this.txtStudentEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStudentEmail.Location = new System.Drawing.Point(526, 203);
+            this.txtStudentEmail.Location = new System.Drawing.Point(285, 203);
             this.txtStudentEmail.Name = "txtStudentEmail";
             this.txtStudentEmail.Size = new System.Drawing.Size(373, 27);
             this.txtStudentEmail.TabIndex = 10;
@@ -157,7 +194,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(238, 203);
+            this.label2.Location = new System.Drawing.Point(61, 203);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 22);
             this.label2.TabIndex = 9;
@@ -166,7 +203,7 @@
             // txtBookIssueDate
             // 
             this.txtBookIssueDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookIssueDate.Location = new System.Drawing.Point(526, 125);
+            this.txtBookIssueDate.Location = new System.Drawing.Point(285, 125);
             this.txtBookIssueDate.Name = "txtBookIssueDate";
             this.txtBookIssueDate.Size = new System.Drawing.Size(373, 27);
             this.txtBookIssueDate.TabIndex = 8;
@@ -174,7 +211,7 @@
             // btnCancel
             // 
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancel.Location = new System.Drawing.Point(1030, 163);
+            this.btnCancel.Location = new System.Drawing.Point(935, 265);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(97, 39);
             this.btnCancel.TabIndex = 7;
@@ -182,21 +219,10 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnReturn
-            // 
-            this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReturn.Location = new System.Drawing.Point(1030, 86);
-            this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(97, 39);
-            this.btnReturn.TabIndex = 6;
-            this.btnReturn.Text = "Return";
-            this.btnReturn.UseVisualStyleBackColor = true;
-            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
-            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(526, 260);
+            this.dateTimePicker2.Location = new System.Drawing.Point(285, 260);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(373, 27);
             this.dateTimePicker2.TabIndex = 5;
@@ -204,7 +230,7 @@
             // txtBookName
             // 
             this.txtBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookName.Location = new System.Drawing.Point(526, 48);
+            this.txtBookName.Location = new System.Drawing.Point(285, 48);
             this.txtBookName.Name = "txtBookName";
             this.txtBookName.Size = new System.Drawing.Size(373, 27);
             this.txtBookName.TabIndex = 3;
@@ -213,7 +239,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(238, 130);
+            this.label4.Location = new System.Drawing.Point(61, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 22);
             this.label4.TabIndex = 2;
@@ -223,7 +249,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(238, 265);
+            this.label3.Location = new System.Drawing.Point(61, 265);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(153, 22);
             this.label3.TabIndex = 1;
@@ -234,7 +260,7 @@
             // 
             this.lable2.AutoSize = true;
             this.lable2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lable2.Location = new System.Drawing.Point(238, 53);
+            this.lable2.Location = new System.Drawing.Point(61, 53);
             this.lable2.Name = "lable2";
             this.lable2.Size = new System.Drawing.Size(103, 22);
             this.lable2.TabIndex = 0;
@@ -361,7 +387,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lable2;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.TextBox txtBookIssueDate;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource lMSDataSetBindingSource;
@@ -374,5 +399,8 @@
         private System.Windows.Forms.Button btnSendEmail;
         private System.Windows.Forms.TextBox txtStudentEmail;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnOTP;
+        private System.Windows.Forms.Button btnVerifyReturn;
+        private System.Windows.Forms.TextBox txtVerify;
     }
 }

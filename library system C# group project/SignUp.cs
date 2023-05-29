@@ -76,6 +76,23 @@ namespace library_system_C__group_project
                 }
 
         }
+
+        private void txtUserName_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (txtUserName.Text == "Username")
+            {
+                txtUserName.Clear();
+            }
+        }
+
+        private void txtPassword_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (txtPassword.Text == "Password")
+            {
+                txtPassword.Clear();
+                txtPassword.PasswordChar = '*';
+            }
+        }
     }
 }
 

@@ -38,6 +38,21 @@ namespace Student_DashBoard
 
         }
 
+        public void UpdateStudentInformation(string email, string contactNumber, string department, string name)
+        {
+            // Update the student information in the form
+            studentemail = email;
+            studentcontactnumber = contactNumber;
+            studentDepartment = department;
+            studentName = name;
+
+            // Update the text boxes or labels in the form
+            txtStudentName.Text = studentName;
+            txtStudentDepartment.Text = studentDepartment;
+            txtStudentContact.Text = studentcontactnumber;
+            txtStudentEmail.Text = studentemail;
+        }
+
         private void StudentDashBoard_Load(object sender, EventArgs e)
         {
             txtStudentName.Text = studentName;

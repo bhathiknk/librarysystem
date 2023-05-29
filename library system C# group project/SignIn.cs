@@ -20,7 +20,7 @@ namespace library_system_C__group_project
 
         private void txtUserName_MouseClick(object sender, MouseEventArgs e)
         {
-            if (txtUserName.Text == "UserName")
+            if (txtUserName.Text == "Username")
             {
                 txtUserName.Clear();
             }

@@ -30,5 +30,15 @@ namespace library_system_C__group_project
             StudentSignin Si = new StudentSignin();
             Si.Show();
         }
+
+        private void option_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

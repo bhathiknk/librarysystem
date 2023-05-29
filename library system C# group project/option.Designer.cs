@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(option));
             this.btnLibrarian = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnStudent = new System.Windows.Forms.Button();
@@ -36,10 +37,10 @@
             // 
             // btnLibrarian
             // 
-            this.btnLibrarian.BackColor = System.Drawing.Color.Blue;
+            this.btnLibrarian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnLibrarian.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLibrarian.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLibrarian.ForeColor = System.Drawing.Color.White;
+            this.btnLibrarian.ForeColor = System.Drawing.Color.Black;
             this.btnLibrarian.Location = new System.Drawing.Point(97, 214);
             this.btnLibrarian.Name = "btnLibrarian";
             this.btnLibrarian.Size = new System.Drawing.Size(254, 62);
@@ -50,10 +51,10 @@
             // 
             // btnStudent
             // 
-            this.btnStudent.BackColor = System.Drawing.Color.Blue;
+            this.btnStudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudent.ForeColor = System.Drawing.Color.White;
+            this.btnStudent.ForeColor = System.Drawing.Color.Black;
             this.btnStudent.Location = new System.Drawing.Point(97, 339);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Size = new System.Drawing.Size(254, 62);
@@ -65,25 +66,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(93, 111);
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(93, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 20);
+            this.label1.Size = new System.Drawing.Size(242, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Please Select Who You Are?";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // option
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(427, 554);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(422, 550);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnStudent);
             this.Controls.Add(this.btnLibrarian);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "option";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "option";
+            this.Load += new System.EventHandler(this.option_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

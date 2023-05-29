@@ -54,6 +54,9 @@ namespace library_system_C__group_project
         private void AccountSettingsPeviousButtons_Click(object sender, EventArgs e)
         {
 
+            // Update the student information in the parent StudentDashboard form
+            accountsettingParentForm.UpdateStudentInformation(studentEmailUpdateTextBox.Text, studentMobileNumberUpdatetxtBox.Text, DepartmentNameUpdatetxtBox.Text, txtname.Text);
+
             accountsettingParentForm.Show(); // Show the existing StudentDashBoard form
             this.Close(); // Close the AccountSettings form
         }

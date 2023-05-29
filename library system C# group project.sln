@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "library system C# group project", "library system C# group project\library system C# group project.csproj", "{58DCB05A-E518-492F-B63A-F84905691BDB}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LMS", "LMS\LMS.vdproj", "{1435FFCB-AE99-44BB-85AC-28AD51B8A065}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LMS", "LMS\LMS.vdproj", "{D03BD251-2D07-44B7-8458-53D722AB2E8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{58DCB05A-E518-492F-B63A-F84905691BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58DCB05A-E518-492F-B63A-F84905691BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58DCB05A-E518-492F-B63A-F84905691BDB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1435FFCB-AE99-44BB-85AC-28AD51B8A065}.Debug|Any CPU.ActiveCfg = Debug
-		{1435FFCB-AE99-44BB-85AC-28AD51B8A065}.Release|Any CPU.ActiveCfg = Release
+		{D03BD251-2D07-44B7-8458-53D722AB2E8B}.Debug|Any CPU.ActiveCfg = Debug
+		{D03BD251-2D07-44B7-8458-53D722AB2E8B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

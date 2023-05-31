@@ -313,7 +313,7 @@
             this.panel2.Controls.Add(this.label8);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(237, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1233, 70);
             this.panel2.TabIndex = 6;
@@ -338,7 +338,7 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(237, 1148);
             this.panel3.TabIndex = 5;
@@ -353,7 +353,7 @@
             this.ViewBookExitToDashBoard.Image = ((System.Drawing.Image)(resources.GetObject("ViewBookExitToDashBoard.Image")));
             this.ViewBookExitToDashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ViewBookExitToDashBoard.Location = new System.Drawing.Point(0, 165);
-            this.ViewBookExitToDashBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ViewBookExitToDashBoard.Margin = new System.Windows.Forms.Padding(4);
             this.ViewBookExitToDashBoard.Name = "ViewBookExitToDashBoard";
             this.ViewBookExitToDashBoard.Size = new System.Drawing.Size(237, 95);
             this.ViewBookExitToDashBoard.TabIndex = 6;
@@ -371,7 +371,7 @@
             this.ViewBookPreviousToAddBooks.Image = ((System.Drawing.Image)(resources.GetObject("ViewBookPreviousToAddBooks.Image")));
             this.ViewBookPreviousToAddBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ViewBookPreviousToAddBooks.Location = new System.Drawing.Point(0, 70);
-            this.ViewBookPreviousToAddBooks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ViewBookPreviousToAddBooks.Margin = new System.Windows.Forms.Padding(4);
             this.ViewBookPreviousToAddBooks.Name = "ViewBookPreviousToAddBooks";
             this.ViewBookPreviousToAddBooks.Size = new System.Drawing.Size(237, 95);
             this.ViewBookPreviousToAddBooks.TabIndex = 5;
@@ -383,7 +383,7 @@
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(237, 70);
             this.panel4.TabIndex = 0;
@@ -402,6 +402,7 @@
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.txtBookSearch);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "viewbook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

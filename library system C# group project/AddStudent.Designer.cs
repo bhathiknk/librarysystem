@@ -201,7 +201,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(237, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1063, 70);
             this.panel2.TabIndex = 15;
@@ -226,7 +226,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(237, 706);
             this.panel1.TabIndex = 14;
@@ -241,7 +241,7 @@
             this.AddStudentExitToDashBoard.Image = ((System.Drawing.Image)(resources.GetObject("AddStudentExitToDashBoard.Image")));
             this.AddStudentExitToDashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddStudentExitToDashBoard.Location = new System.Drawing.Point(0, 165);
-            this.AddStudentExitToDashBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddStudentExitToDashBoard.Margin = new System.Windows.Forms.Padding(4);
             this.AddStudentExitToDashBoard.Name = "AddStudentExitToDashBoard";
             this.AddStudentExitToDashBoard.Size = new System.Drawing.Size(237, 95);
             this.AddStudentExitToDashBoard.TabIndex = 6;
@@ -259,7 +259,7 @@
             this.viewStudentInfoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewStudentInfoToolStripMenuItem.Image")));
             this.viewStudentInfoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.viewStudentInfoToolStripMenuItem.Location = new System.Drawing.Point(0, 70);
-            this.viewStudentInfoToolStripMenuItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.viewStudentInfoToolStripMenuItem.Margin = new System.Windows.Forms.Padding(4);
             this.viewStudentInfoToolStripMenuItem.Name = "viewStudentInfoToolStripMenuItem";
             this.viewStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(237, 95);
             this.viewStudentInfoToolStripMenuItem.TabIndex = 5;
@@ -271,7 +271,7 @@
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(237, 70);
             this.panel3.TabIndex = 0;
@@ -297,6 +297,7 @@
             this.Controls.Add(this.lable3);
             this.Controls.Add(this.lable2);
             this.Controls.Add(this.lable1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

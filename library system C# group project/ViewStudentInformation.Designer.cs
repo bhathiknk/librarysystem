@@ -280,7 +280,7 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(237, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1321, 70);
             this.panel2.TabIndex = 6;
@@ -305,7 +305,7 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(237, 974);
             this.panel3.TabIndex = 5;
@@ -320,7 +320,7 @@
             this.ViewStudentsToPrevious.Image = ((System.Drawing.Image)(resources.GetObject("ViewStudentsToPrevious.Image")));
             this.ViewStudentsToPrevious.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ViewStudentsToPrevious.Location = new System.Drawing.Point(0, 165);
-            this.ViewStudentsToPrevious.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ViewStudentsToPrevious.Margin = new System.Windows.Forms.Padding(4);
             this.ViewStudentsToPrevious.Name = "ViewStudentsToPrevious";
             this.ViewStudentsToPrevious.Size = new System.Drawing.Size(237, 95);
             this.ViewStudentsToPrevious.TabIndex = 7;
@@ -338,7 +338,7 @@
             this.ViewStudentToExitDashBoard.Image = ((System.Drawing.Image)(resources.GetObject("ViewStudentToExitDashBoard.Image")));
             this.ViewStudentToExitDashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ViewStudentToExitDashBoard.Location = new System.Drawing.Point(0, 70);
-            this.ViewStudentToExitDashBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ViewStudentToExitDashBoard.Margin = new System.Windows.Forms.Padding(4);
             this.ViewStudentToExitDashBoard.Name = "ViewStudentToExitDashBoard";
             this.ViewStudentToExitDashBoard.Size = new System.Drawing.Size(237, 95);
             this.ViewStudentToExitDashBoard.TabIndex = 6;
@@ -350,7 +350,7 @@
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(237, 70);
             this.panel4.TabIndex = 0;
@@ -369,6 +369,7 @@
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.txtStudentIdSearch);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ViewStudentInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReturnBook));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.AddBooksPageExit = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnSearchStudent = new System.Windows.Forms.Button();
@@ -58,7 +59,6 @@
             this.lable1 = new System.Windows.Forms.Label();
             this.txtContent = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.AddBooksPageExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -81,6 +81,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(268, 505);
             this.panel1.TabIndex = 0;
+            // 
+            // AddBooksPageExit
+            // 
+            this.AddBooksPageExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AddBooksPageExit.FlatAppearance.BorderSize = 0;
+            this.AddBooksPageExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddBooksPageExit.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddBooksPageExit.ForeColor = System.Drawing.Color.White;
+            this.AddBooksPageExit.Image = ((System.Drawing.Image)(resources.GetObject("AddBooksPageExit.Image")));
+            this.AddBooksPageExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddBooksPageExit.Location = new System.Drawing.Point(0, 0);
+            this.AddBooksPageExit.Margin = new System.Windows.Forms.Padding(4);
+            this.AddBooksPageExit.Name = "AddBooksPageExit";
+            this.AddBooksPageExit.Size = new System.Drawing.Size(268, 105);
+            this.AddBooksPageExit.TabIndex = 5;
+            this.AddBooksPageExit.Text = "Previous";
+            this.AddBooksPageExit.UseVisualStyleBackColor = true;
+            this.AddBooksPageExit.Click += new System.EventHandler(this.AddBooksPageExit_Click);
             // 
             // btnExit
             // 
@@ -396,24 +414,6 @@
             this.txtEmail.Size = new System.Drawing.Size(335, 22);
             this.txtEmail.TabIndex = 0;
             // 
-            // AddBooksPageExit
-            // 
-            this.AddBooksPageExit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.AddBooksPageExit.FlatAppearance.BorderSize = 0;
-            this.AddBooksPageExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddBooksPageExit.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddBooksPageExit.ForeColor = System.Drawing.Color.White;
-            this.AddBooksPageExit.Image = ((System.Drawing.Image)(resources.GetObject("AddBooksPageExit.Image")));
-            this.AddBooksPageExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddBooksPageExit.Location = new System.Drawing.Point(0, 0);
-            this.AddBooksPageExit.Margin = new System.Windows.Forms.Padding(4);
-            this.AddBooksPageExit.Name = "AddBooksPageExit";
-            this.AddBooksPageExit.Size = new System.Drawing.Size(268, 105);
-            this.AddBooksPageExit.TabIndex = 5;
-            this.AddBooksPageExit.Text = "Previous";
-            this.AddBooksPageExit.UseVisualStyleBackColor = true;
-            this.AddBooksPageExit.Click += new System.EventHandler(this.AddBooksPageExit_Click);
-            // 
             // ReturnBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -425,6 +425,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ReturnBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

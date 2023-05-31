@@ -507,6 +507,7 @@
             this.Controls.Add(this.StudentAccountSettingsUpdatebtn);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AccountSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

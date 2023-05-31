@@ -10,8 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ExcelDataReader;
-using System.IO;
 
 namespace library_system_C__group_project
 {
@@ -166,7 +164,7 @@ namespace library_system_C__group_project
                         }
                     }
 
-                    MessageBox.Show("Data from Excel file uploaded successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Data from Excel file Inseeted And Updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
@@ -176,34 +174,58 @@ namespace library_system_C__group_project
         }
 
         private void InsertBookIntoDatabase(string bookname, string bookauthor, string bookpublication, DateTime bookdate, Int32 bookprice, Int32 bookquantity)
+        {
+            //this for if admin updated there book record and insert new recode
+            string connectionString = "data source = 168.138.188.44,1434;database = LMS;user id = sa;password = P4ssword;";
+            string selectQuery = "SELECT COUNT(*) FROM NewBook WHERE bookname = @bookname";
+            string insertQuery = "INSERT INTO NewBook (bookname, bookauthor, bookpublication, bookdate, bookprice, bookquantity) VALUES (@bookname, @bookauthor, @bookpublication, @bookdate, @bookprice, @bookquantity)";
+            string updateQuery = "UPDATE NewBook SET bookauthor = @bookauthor, bookpublication = @bookpublication, bookdate = @bookdate, bookprice = @bookprice, bookquantity = @bookquantity WHERE bookname = @bookname";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string connectionString = "data source = 168.138.188.44,1434;database = LMS;user id = sa;password = P4ssword;";
-                string query = "INSERT INTO NewBook (bookname, bookauthor, bookpublication, bookdate, bookprice, bookquantity) VALUES (@bookname, @bookauthor, @bookpublication, @bookdate, @bookprice, @bookquantity)";
+                connection.Open();
 
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                // Check if the book already exists
+                using (SqlCommand selectCommand = new SqlCommand(selectQuery, connection))
                 {
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        // Add parameters to the command
-                        command.Parameters.AddWithValue("@bookname", bookname);
-                        command.Parameters.AddWithValue("@bookauthor", bookauthor);
-                        command.Parameters.AddWithValue("@bookpublication", bookpublication);
-                        command.Parameters.AddWithValue("@bookdate", bookdate.ToString("yyyy-MM-dd")); // Convert to string in the format compatible with SQL
-                        command.Parameters.AddWithValue("@bookprice", bookprice);
-                        command.Parameters.AddWithValue("@bookquantity", bookquantity);
+                    selectCommand.Parameters.AddWithValue("@bookname", bookname);
 
-                        try
+                    int count = (int)selectCommand.ExecuteScalar();
+
+                    if (count > 0)
+                    {
+                        // Update the book details
+                        using (SqlCommand updateCommand = new SqlCommand(updateQuery, connection))
                         {
-                            connection.Open();
-                            command.ExecuteNonQuery();
+                            updateCommand.Parameters.AddWithValue("@bookname", bookname);
+                            updateCommand.Parameters.AddWithValue("@bookauthor", bookauthor);
+                            updateCommand.Parameters.AddWithValue("@bookpublication", bookpublication);
+                            updateCommand.Parameters.AddWithValue("@bookdate", bookdate.ToString("yyyy-MM-dd"));
+                            updateCommand.Parameters.AddWithValue("@bookprice", bookprice);
+                            updateCommand.Parameters.AddWithValue("@bookquantity", bookquantity);
+
+                            updateCommand.ExecuteNonQuery();
                         }
-                        catch (Exception ex)
+
+
+                    }
+                    else
+                    {
+                        // Insert the book details
+                        using (SqlCommand insertCommand = new SqlCommand(insertQuery, connection))
                         {
-                            // Handle any exceptions that occur during database insertion
-                            MessageBox.Show("Error inserting book data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            insertCommand.Parameters.AddWithValue("@bookname", bookname);
+                            insertCommand.Parameters.AddWithValue("@bookauthor", bookauthor);
+                            insertCommand.Parameters.AddWithValue("@bookpublication", bookpublication);
+                            insertCommand.Parameters.AddWithValue("@bookdate", bookdate.ToString("yyyy-MM-dd"));
+                            insertCommand.Parameters.AddWithValue("@bookprice", bookprice);
+                            insertCommand.Parameters.AddWithValue("@bookquantity", bookquantity);
+
+                            insertCommand.ExecuteNonQuery();
                         }
                     }
                 }
             }
+        }
     }
 }

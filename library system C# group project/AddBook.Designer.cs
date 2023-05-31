@@ -298,9 +298,9 @@
             this.btnUploadExcel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUploadExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUploadExcel.ForeColor = System.Drawing.Color.White;
-            this.btnUploadExcel.Location = new System.Drawing.Point(787, 589);
+            this.btnUploadExcel.Location = new System.Drawing.Point(797, 588);
             this.btnUploadExcel.Name = "btnUploadExcel";
-            this.btnUploadExcel.Size = new System.Drawing.Size(128, 47);
+            this.btnUploadExcel.Size = new System.Drawing.Size(128, 51);
             this.btnUploadExcel.TabIndex = 18;
             this.btnUploadExcel.Text = "Upload Excel File";
             this.btnUploadExcel.UseVisualStyleBackColor = false;
